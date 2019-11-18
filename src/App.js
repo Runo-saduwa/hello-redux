@@ -3,7 +3,7 @@ import {createStore} from 'redux';
 import HelloWorld from "./HelloWorld";
 
 
-const store = createStore(reducer);
+const store = createStore(reducer, initialState);
 
 class App extends Component {
   state = {
