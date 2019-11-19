@@ -1,3 +1,14 @@
-export default (state) => {
-    return state;
+export default (state, action) => {
+    console.log(action);
+    switch(action.type) {
+        case 'SET_TECHNOLOGY':
+        return {
+            ...state,
+            tech: action.payload
+        }
+
+        default:
+            return state;
+    }
+  
 } 
